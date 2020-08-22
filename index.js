@@ -80,6 +80,6 @@ module.exports = function(homebridge) {
     Helper.fixInheritance(eDomoticzServices.UVDeviceService, Service);
     Helper.fixInheritance(eDomoticzServices.UVIndex, Characteristic);
 
-    homebridge.registerPlatform("homebridge-edomoticz", "eDomoticz", eDomoticzPlatform, true);
-    homebridge.registerPlatform("homebridge-edomoticz-tv", "eDomoticzTV", eDomoticzTVPlatform, true);
+    homebridge.registerPlatform("homebridge-edomoticz", "eDomoticz", eDomoticzPlatform);
+    homebridge.registerPlatform("homebridge-edomoticz-tv", "eDomoticzTV", eDomoticzTVPlatform);
 };
